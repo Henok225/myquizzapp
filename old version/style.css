@@ -1,0 +1,159 @@
+body{
+    margin: 0;
+}
+.container{
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    background-color: antiquewhite;
+    padding: 50px;
+    box-shadow: 0 0 5px black;
+    border-radius: 10px;
+    height: 80vh;   
+    overflow: scroll; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    visibility: hidden;
+}
+.question{
+margin-left: 50px;
+font-size: 1.2em;
+font-weight: 550;
+margin-bottom: 5px;
+}
+.question li{
+    list-style: none;
+    text-wrap: wrap;
+    animation: comeff 1s;
+}
+.choices{
+    margin-left: 80px;
+    margin-top: 20px;
+    line-height: 2em;
+  
+}
+@keyframes choss {
+    0%{
+        opacity: 0;
+        transform: rotate(180deg);
+          }
+    100%{
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
+.choices li{
+    list-style: none;
+    font-size: 1.1em;
+    animation: choss 0.5s;
+
+}
+.choices li input{
+    width: 1.1em;
+}
+
+.answer{
+    color: rgb(66, 5, 123);
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+.btns{
+    margin-top: 100px;
+    font-size: 1.1em;
+}
+.btns button{
+    color: white;
+    font-weight: 600;
+    padding: 8px 10px;
+    background-color: black;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.scoreBox{
+    float: right;
+    position: relative;
+    bottom: 40px;
+    right: 20px;
+}
+.tit{
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    margin-top: 50px;
+    font-size: 2em;
+    color: blue;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+@keyframes comeff{
+    0%{
+        transform: rotate(-180deg);
+       opacity: 0;
+    }
+    100%{
+        transform: rotate(0);
+       opacity:1;
+    }
+   
+}
+.homepg{
+    text-align: center;
+    font-size: 1.2em;
+    width: 80%;
+    margin: auto;
+}
+.homepg .inttit{
+font-weight: 600;
+font-size: 1.3em;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+background-color: aliceblue;
+padding: 10px;
+}
+.homepg .subs{
+    background-color: antiquewhite;
+    line-height: 1.5em;
+    padding: 10px;
+}
+.homepg .subs .sub{
+    list-style: none;
+    color: rgba(0, 0, 255, 0.647);
+    font-weight: 600;
+}
+.homepg .subs .sub:hover{
+    border-bottom: 2px solid blue;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.134);
+}
+.exit-icon{
+    background-color: blueviolet;
+    color: white;
+    font-weight: 800;
+    padding: 4px;
+    border-radius: 5px;
+}
+.exit-icon:hover{
+    cursor: pointer;
+    background-color: black;
+}
+footer{
+    background-color: aliceblue;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+@media screen and (max-width:550px){
+    body{
+        background-color: black;
+       }
+       .container{
+        width: fit-content;
+        margin-top: 50px;
+        padding: 10px;
+         }
+         .question{
+            margin-left: 10px;
+         }
+         .choices{
+            margin-left: 20px;
+            
+        }
+}
